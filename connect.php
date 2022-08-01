@@ -13,12 +13,12 @@
 
 
 	// Database connection
-	$conn = new mysqli('localhost','root','','test');
+	$conn = new mysqli('localhost','root','','swe_database');
 	if($conn->connect_error){
 		echo "$conn->connect_error";
 		die("Connection Failed : ". $conn->connect_error);
 	} else {
-		$stmt = $conn->prepare("insert into registration(ownerName, number, address) values(?, ?, ?");
+		$stmt = $conn->prepare("insert into owner(ownerName, number, address) values(?, ?, ?)";
 		$stmt->bind_param("sss", $ownerName, $number, $address);
 		$execval = $stmt->execute();
 		echo $execval;
