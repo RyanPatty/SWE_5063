@@ -19,5 +19,5 @@ if($rs)
 {
 	echo "Contact Records Inserted";
 }
-
+    echo "error";
 ?>
