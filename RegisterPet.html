@@ -13,28 +13,33 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli&amp;display=swap">
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/Articles-Cards-images.css">
+    <link rel="stylesheet" href="assets/css/Bootstrap-Calendar.css">
+    <link rel="stylesheet" href="assets/css/Calendar-BS4-news.css">
+    <link rel="stylesheet" href="assets/css/Calendar-BS4.css">
     <link rel="stylesheet" href="assets/css/DinDinNav.css">
+    <link rel="stylesheet" href="assets/css/Event-Schedule.css">
     <link rel="stylesheet" href="assets/css/Team-images.css">
 </head>
 
 <body>
     <header class="masthead" style="background-image:url('assets/img/contact-bg.jpg');">
-        <div class="overlay"></div>
+        <div class="overlay">
+            <nav class="navbar navbar-light navbar-expand-lg fixed-top" id="mainNav">
+                <div class="container"><a class="navbar-brand fs-1" href="#page-top">Din Din</a><button data-bs-toggle="collapse" data-bs-target="#navbarResponsive" class="navbar-toggler float-end" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" style="margin-right: 3px;"><i class="fa fa-bars"></i></button>
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item"><a class="nav-link" href="#download">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#features">My Pet</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#contact">Feed schedule</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
         <div class="container">
             <div class="row">
                 <div class="col-md-10 col-lg-8 mx-auto position-relative">
                     <div class="site-heading">
-                        <nav class="navbar navbar-light navbar-expand-lg fixed-top" id="mainNav">
-                            <div class="container"><a class="navbar-brand fs-1" href="#page-top">Din Din</a><button data-bs-toggle="collapse" data-bs-target="#navbarResponsive" class="navbar-toggler float-end" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" style="margin-right: 3px;"><i class="fa fa-bars"></i></button>
-                                <div class="collapse navbar-collapse" id="navbarResponsive">
-                                    <ul class="navbar-nav ms-auto">
-                                        <li class="nav-item"><a class="nav-link" href="#download">Home</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="#features">My Pet</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="#contact">Feed schedule</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </nav>
                         <h1>New Pet!</h1><span class="subheading"></span>
                     </div>
                 </div>
@@ -59,7 +64,7 @@
                         <div class="form-floating controls mb-3"><input class="form-control" type="email" id="email" required="" placeholder="Email Address"><label class="form-label">Weight</label><small class="form-text text-danger help-block"></small></div>
                     </div>
                     <div class="control-group">
-                        <div class="form-floating controls mb-3"><input class="form-control" type="tel" id="phone" required="" placeholder="Phone Number"><label class="form-label">Age</label><small class="form-text text-danger help-block"></small></div>
+                        <div class="form-floating controls mb-3"><input class="form-control" type="tel" id="phone" required="" placeholder="Phone Number"><label class="form-label">Phone Number</label><small class="form-text text-danger help-block"></small></div>
                     </div>
                     <div class="control-group">
                         <div class="form-floating controls mb-3"></div>
@@ -80,7 +85,7 @@
                         <li class="list-inline-item"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x fa-inverse"></i></span></li>
                         <li class="list-inline-item"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-github fa-stack-1x fa-inverse"></i></span></li>
                     </ul>
-                    <p class="text-muted copyright">Copyright&nbsp;© DinDin LLC 2022</p>
+                    <p class="text-muted copyright">Copyright&nbsp;©&nbsp;Brand 2022</p>
                 </div>
             </div>
         </div>
