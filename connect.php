@@ -1,29 +1,23 @@
 <?php
-    //Owner
-	$ownerName = $_POST['ownerName'];
-	$number = $_POST['number'];
-	$address = $_POST['address'];
+// database connection code
+// $con = mysqli_connect('localhost', 'database_user', 'database_password','database');
 
-    //Pet
-	$petName = $_POST['petName'];
-	$petType = $_POST['petType'];
-	$breed = $_POST['breed'];
-    $weight = $_POST['weight'];
-    $age = $_POST['age'];
+$con = mysqli_connect('localhost', 'root', '','swe_database');
 
+// get the post records
+$ownerName = $_POST['ownerName'];
+$number = $_POST['number'];
+$address = $_POST['address'];
 
-	// Database connection
-	$conn = new mysqli('localhost','root','','swe_database');
-	if($conn->connect_error){
-		echo "$conn->connect_error";
-		die("Connection Failed : ". $conn->connect_error);
-	} else {
-		$stmt = $conn->prepare("insert into owner(ownerName, number, address) values(?, ?, ?)";
-		$stmt->bind_param("sss", $ownerName, $number, $address);
-		$execval = $stmt->execute();
-		echo $execval;
-		echo "Registration successfully...";
-		$stmt->close();
-		$conn->close();
-	}
+// database insert SQL code
+$sql = "INSERT INTO `tbl_contact` (`Id`, `ownerName`, `number`, `address`) VALUES ('', '$ownerName', '$number', '$address')";
+
+// insert in database 
+$rs = mysqli_query($con, $sql);
+
+if($rs)
+{
+	echo "Contact Records Inserted";
+}
+
 ?>
