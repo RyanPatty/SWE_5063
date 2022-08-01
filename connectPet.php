@@ -5,12 +5,14 @@
 $con = mysqli_connect('localhost', 'root', '','swe_database');
 
 // get the post records
-$ownerName = $_POST['ownerName'];
-$number = $_POST['number'];
-$address = $_POST['address'];
+$petName = $_POST['petName'];
+$petType = $_POST['petType'];
+$breed = $_POST['breed'];
+$weight = $_POST['weight'];
+$age = $_POST['age'];
 
 // database insert SQL code
-$sql = "INSERT INTO `owner` (`ownerID`, `ownerName`, `number`, `address`) VALUES ('', '$ownerName', '$number', '$address')";
+$sql = "INSERT INTO `pet` (`Id`, `petName`, `petType`, `breed`, 'weight', 'age') VALUES ('', '$petName', '$petType', '$breed', '$weight', '$age')";
 
 // insert in database 
 $rs = mysqli_query($con, $sql);
